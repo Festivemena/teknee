@@ -1,0 +1,146 @@
+:root {
+  --tek-primary-color: rgba(1, 46, 163, 1);
+  --tek-secondary-color: rgba(1, 35, 123, 1);
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+html {
+  /* font-family: 'Lexend', sans-serif; */
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+  background: #d1d1d1;
+  box-sizing: border-box;
+}
+body {
+  /* font-family: 'Lexend', sans-serif; */
+  font-family: "Poppins", sans-serif;
+  background: #eff2f8;
+  box-sizing: border-box;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+li {
+  text-decoration: none !important;
+  list-style: none !important;
+}
+a {
+  text-decoration: none !important;
+  color: black;
+}
+ul {
+  margin: 0px !important;
+  padding: 0px !important;
+}
+.tek_text_primary {
+  color: var(--tek-primary-color);
+}
+.tek_text_secondary {
+  color: var(--tek-secondary-color);
+}
+.tek_bg_primary {
+  background: var(--tek-primary-color);
+}
+.tek_bg_secondary {
+  background-color: var(--tek-secondary-color);
+}
+.tek_bg_btn_secondary {
+  color: white !important;
+  background-color: var(--tek-secondary-color);
+  /* padding: 2px; */
+  background: #01237b;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+}
+
+.tek_bg_btn_secondary a,
+.tek_bg_primary a {
+  color: white;
+}
+.tek_underline {
+  border-bottom: 3px solid var(--tek-primary-color);
+  width: 30%;
+}
+.tek_carousel_active {
+  background: #000e31;
+  color: white;
+  transform: scale(1.2);
+}
+
+/* header responsiveness */
+
+section {
+  margin: 80px auto;
+}
+
+footer {
+  background-color: var(--tek-secondary-color);
+  color: white;
+  position: relative;
+  top: 80px;
+}
+
+#mobile_head {
+  display: none !important;
+}
+@media screen and (min-width: 3000px) {
+  body {
+    width: 2600px;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 1000px) {
+  #main_head {
+    display: none !important;
+  }
+  #mobile_head {
+    display: flex !important;
+  }
+  .mobile_none {
+    display: none !important;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

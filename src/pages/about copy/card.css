@@ -1,0 +1,31 @@
+.person-card {
+  width: 320px;
+  max-width: 400px;
+  aspect-ratio: 0.666;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+.carousel .person-card_info-root > div > img {
+  display: initial;
+  width: auto;
+  pointer-events: auto;
+  vertical-align: initial;
+}
+.person-card_info-root {
+  width: 100%;
+
+  background: rgba(210, 210, 210, 0.3);
+  /* background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.4) 100%
+    ),
+    rgba(255, 255, 255, 0.3); */
+  border: 1px solid #e0e0e0;
+  backdrop-filter: blur(12px);
+  color: white;
+}
